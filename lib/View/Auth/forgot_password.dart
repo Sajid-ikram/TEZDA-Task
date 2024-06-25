@@ -81,10 +81,10 @@ class _CustomDialogBoxState extends State<CustomDialogBox> {
 
   contentBox(context) {
     var size = MediaQuery.of(context).size;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return ListView(
+
       children: [
-        Spacer(flex: size.width >= 900 ? 4 : 1),
+
         Container(
           height: kIsWeb ? 800 : 800.h,
           width: kIsWeb ? 380 : 360.w,
@@ -154,7 +154,7 @@ class _CustomDialogBoxState extends State<CustomDialogBox> {
             ],
           ),
         ),
-        Spacer(),
+
       ],
     );
   }
